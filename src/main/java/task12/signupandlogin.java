@@ -50,14 +50,8 @@ public class signupandlogin {
         
         // Click the login button
          driver.findElement(By.id("login-btn")).click();
-
-        
-        // Wait for the login process to complete
-      //  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-        
-        // Verify that the user is logged in successfully
-        // This could be checking for a specific element that only appears after login
-    /*    boolean isLoggedIn = false;
+         
+       boolean isLoggedIn = false;
         try {
             WebElement userProfile = driver.findElement(By.xpath("//a[contains(text(), 'Profile')]"));
             if (userProfile.isDisplayed()) {
@@ -71,8 +65,8 @@ public class signupandlogin {
             System.out.println("User logged in successfully.");
         } else {
             System.out.println("Login failed.");
-        } */
-        System.out.println("User logged in successfully.");
+        } 
+        
         // Close the browser
         driver.quit();
     }
